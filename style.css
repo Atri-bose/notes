@@ -1,0 +1,5 @@
+.bdr{outline: black solid 1mm;width:20%;}
+.crd{float:inline-start}
+button{font-family: 'Times New Roman', Times, serif;width: 5 rem;}
+.cardu-body{width:33% ;outline: black solid 0.5mm; float: left;}
+button.butn{background-color: blue;font-family: 'Times New Roman', Times, serif;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
