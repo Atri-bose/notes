@@ -25,6 +25,12 @@ function shownote() {
         <p class="card-text " id="Text">${value}</p>
         <button  class="butn btn-secondary" id = "${key}" style = "font-family: 'Times New Roman', Times, serif;width: 5 rem">Delete Note</button>
         </div>`;
+        if (Notification.permission === "granted") {
+      null;
+   } else {
+      Notification.requestPermission().then(permission => {if (Notification.permission === "granted") {
+      null;
+   } else {null}});
         setTimeout(function(){
        {if(Notification.permission === "granted"){var n = new Notification(key)}else{alert(key)}localStorage.removeItem(key);shownote();}},arr[1]);};
     }
